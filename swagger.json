@@ -5,10 +5,10 @@
     "description": "Documentation for the events routes",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse341-briggs-history-timeline.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/events/": {
