@@ -1,0 +1,77 @@
+###
+GET https://cse341-briggs-history-timeline.onrender.com/ HTTP/1.1
+
+###
+GET http://localhost:8080/events HTTP/1.1
+
+###
+GET http://localhost:8080/events/6ab82d50577ff174883468a0 HTTP/1.1
+
+###
+GET https://cse341-briggs-history-timeline.onrender.com/events HTTP/1.1
+
+###
+GET https://cse341-briggs-history-timeline.onrender.com/events/6ab82d50577ff174883468a0 HTTP/1.1
+
+###
+POST http://localhost:8080/events HTTP/1.1
+Content-Type: application/json
+
+{
+   "title": "Apollo 11 Moon Landing",
+  "description": "Humans landed on the Moon for the first time.",
+  "year": 1969,
+  "month": 7,
+  "day": 20,
+  "location": "Moon",
+  "category": "Space exploration"
+}
+
+###
+PUT http://localhost:8080/events/6ab82d50577ff174883468a0 HTTP/1.1
+Content-Type: application/json
+
+{
+   "title": "Apollo 11 Moon Landing",
+  "description": "Humans landed on the Moon for the first time.",
+  "year": 1969,
+  "month": 7,
+  "day": 20,
+  "location": "Moon",
+  "category": "Space exploration"
+}
+
+###
+DELETE http://localhost:8080/events/6ac1d81920cf76b582aade1e HTTP/1.1
+
+
+###
+POST https://cse341-briggs-history-timeline.onrender.com/events HTTP/1.1
+Content-Type: application/json
+
+{
+   "title": "Apollo 11 Moon Landing",
+  "description": "Humans landed on the Moon for the first time.",
+  "year": 1969,
+  "month": 7,
+  "day": 20,
+  "location": "Moon",
+  "category": "Space exploration"
+}
+
+###
+PUT https://cse341-briggs-history-timeline.onrender.com/events/6ab82d50577ff174883468a0 HTTP/1.1
+Content-Type: application/json
+
+{
+   "title": "Apollo 11 Moon Landing",
+  "description": "Humans landed on the Moon for the first time.",
+  "year": 1969,
+  "month": 7,
+  "day": 20,
+  "location": "Moon",
+  "category": "Space exploration"
+}
+
+###
+DELETE https://cse341-briggs-history-timeline.onrender.com/events/6ac1d81920cf76b582aade1e HTTP/1.1

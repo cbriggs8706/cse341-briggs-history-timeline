@@ -1,5 +1,4 @@
 const express = require('express')
-const bodyParser = require('body-parser')
 const mongodb = require('./db/connect')
 const swaggerUi = require('swagger-ui-express')
 const apiDocument = require('./swagger.json')
@@ -13,7 +12,7 @@ app.use(
 		origin: 'https://cse341-contacts-frontend.netlify.app',
 	}),
 )
-app.use(bodyParser.json())
+app.use(express.json())
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(apiDocument))
 app.use('/', require('./routes'))
 

@@ -2,18 +2,22 @@ const swaggerAutogen = require('swagger-autogen')()
 
 const doc = {
 	info: {
-		title: 'Contacts API',
-		description: 'Documentation for the contacts routes',
+		title: 'Events API',
+		description: 'Documentation for the events routes',
 	},
-	host: 'cse341-history-timeline.onrender.com',
+	// host: 'localhost:8080',
+	// schemes: ['http'],
+	host: 'cse341-briggs-history-timeline.onrender.com',
 	schemes: ['https'],
 	definitions: {
-		Contact: {
-			firstName: 'John',
-			lastName: 'Doe',
-			email: 'john.doe@example.com',
-			favoriteColor: 'blue',
-			birthday: '1990-01-01',
+		Event: {
+			title: 'Fall of the Roman Empire',
+			description: 'The fall of the Western Roman Empire',
+			year: 476,
+			month: 9,
+			day: 4,
+			location: 'Rome, Italy',
+			category: 'History',
 		},
 	},
 }
