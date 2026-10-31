@@ -5,10 +5,10 @@ const doc = {
 		title: 'Events API',
 		description: 'Documentation for the events routes',
 	},
-	host: 'localhost:8080',
-	schemes: ['http'],
-	// host: 'cse341-briggs-history-timeline.onrender.com',
-	// schemes: ['https'],
+	// host: 'localhost:8080',
+	// schemes: ['http'],
+	host: 'cse341-briggs-history-timeline.onrender.com',
+	schemes: ['https'],
 	'@definitions': {
 		Event: {
 			type: 'object',
